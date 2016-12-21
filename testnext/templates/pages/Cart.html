@@ -1,0 +1,27 @@
+<!-- Top bar -->
+{% extends '/www/testing.html' %}
+
+{% block content %}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ITEM_NAME</th>
+      <th>PRICE</th>
+      <th>QUANTITY</th>
+      <th>DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+   {% for i in items %}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{i.name_product}}</td>
+      <td>{{i.price_product}}</td>
+      <td>{{i.quentity_product}}</td>
+      <td>{{i.description_product}}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+{% endblock%}

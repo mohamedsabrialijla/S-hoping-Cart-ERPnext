@@ -1,0 +1,354 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="M_Adnan"/>
+    <!-- Document Title -->
+    <title>AL IJLA || Ecomerce Company</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/testnext/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/testnext/images/favicon.ico" type="image/x-icon">
+
+    <!-- FontsOnline -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,900,300,100' rel='stylesheet'
+          type='text/css'>
+
+    <!-- StyleSheets -->
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/frappe-web.css">
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" href="/assets/testnext/css/font-awesome.min.css">
+    <!-- JavaScripts -->
+    <style type="text/css">
+        input{
+        border: none;
+        text-align: center;
+        background-color: inherit;
+
+        }
+        .im-over
+        {
+              height: 358px !important;
+              width: 350px !important;
+        }
+        .qyt{
+
+            width: 84px;
+            background-color: antiquewhite;
+            display: inline-block !important;
+            border: crimson solid 1px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/assets/js/frappe-web.js"></script>
+    <script src="/assets/testnext/js/vendors/modernizr.js"></script>
+    <script src="/assets/testnext/rs-plugin/js/jquery.themepunch.enablelog.js"></script>
+    <script src="/assets/testnext/rs-plugin/js/jquery.themepunch.revolution.js"></script>
+    <script src="/assets/testnext/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+</head>
+<body>
+
+<!-- Page Wrapper -->
+<div id="wrap">
+
+    <!-- Top bar -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 noo-res"></div>
+            <div class="col-md-10">
+                <div class="top-bar">
+                    <div class="col-md-3">
+                        <ul class="social_icons">
+                            <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#."><i class="fa fa-google"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Icon -->
+                    <div class="col-md-9">
+                        <ul class="some-info font-montserrat">
+                            <li><i class="fa fa-phone"></i> +1 548-554-451</li>
+                            <li><i class="fa fa-envelope"></i> Example@domain.com</li>
+                            <li><i class="fa fa-weixin"></i> LiveChat</li>
+                            <li><i class="fa fa-question-circle"></i> Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header coporate-header">
+        <div class="sticky">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="/assets/testnext/images/logo.png" alt=""></a></div>
+
+                <!-- Nav -->
+                <nav>
+
+
+                    <ul id="navigation" class="ownmenu">
+                        {% for href, id, caption in navigation_bar %}
+                        <li {% if id== active_page %} class="active" {% endif
+                            %}><a href="{{ href|e }}">{{ caption|e }}</a></li>
+                        {% endfor %}
+                    </ul>
+
+
+                    <ul id="ownmenu" class="ownmenu">
+                        <li><a href="testing">HOME</a></li>
+                        <li><a href=" "> ABOUT </a></li>
+                        <li><a href="Cart"> CART MARkTING</a></li>
+                        <li><a href="index" class="e">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="index">Index Defult</a></li>
+                                <li><a href="index-1.html">Index 2</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="contact"> CONTACT</a></li>
+
+                        <!--======= SEARCH ICON =========-->
+                        <li class="search-nav right"><a href="#."><i class="fa fa-search"></i></a>
+                            <ul class="dropdown">
+                                <li>
+                                    <form>
+                                        <input type="search" class="form-control" placeholder="Enter Your Keywords..."
+                                               required>
+                                        <button type="submit"> SEARCH</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    {% block content %}
+    <!--======= HOME MAIN SLIDER =========-->
+
+    <!-- Content -->
+    <div id="content">
+
+        <!-- Case Studies -->
+        <section class="case-studies padding-top-100 padding-bottom-100">
+            <div class="container">
+
+                <!-- Tittle -->
+                <div class="heading-block text-center margin-bottom-80">
+                    <h2>Devices in E-Commerce </h2>
+                    <span class="intro-style">Do you want to Shoping with MyMarkting </span></div>
+
+                <!-- Cases -->
+                <div class="case">
+                    <ul class="row">
+
+                        <!-- Case 1 -->
+                        {% for i in items %}
+                        <li class="col-md-4">
+                            <article><div class="im-over"><a href="#"><img class="img-responsive" id="imag" src="/assets/testnext/images/{{i[2]}}"
+                                                                           alt=""  width="350"> </a></div>
+                                <div class="case-detail">
+                                    <h5><input value="{{i[1]}}" id="name" class="ItemName"  disabled="disabled"/></h5><input class="cost" value=" {{i[4]}}" disabled="disabled" id="price" />$
+
+                                    <span>
+                                        <h6>QTY</h6><input value="{{i[3]}}" id="quent" class="quent"  disabled="disabled"/>
+                                         <input type="text" value="{{i[3]}}" id="" class="qyt" placeholder="" />
+                                    </span>
+
+
+                                    <p><input value=" {{i[5]}}" id="description" class="des" disabled="disabled"/></p>
+                                    <a href="" class="btn btn-orange add" type="submit"  value="" id="buy_{{i[0]}}" />BUY</a>
+                                </div>
+
+                            </article>
+                        </li>
+
+                        {% endfor %}
+
+                    </ul>
+
+                    <!-- Button -->
+                </div>
+
+        </section>
+
+    </div>
+    <!-- End Content -->
+    {% endblock %}
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 padding-top-50">
+
+                    <!-- News Letter -->
+                    <div class="news-letter">
+                        <h6>News Letter</h6>
+                        <form>
+                            <input type="email" placeholder="Enter your email...">
+                            <button type="submit"><i class="fa fa-envelope-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Folow Us -->
+                <div class="col-md-6 padding-top-50">
+                    <div class="news-letter">
+                        <h6>Follow us</h6>
+                        <ul class="social_icons pull-left margin-left-50 margin-top-10">
+                            <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#."><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#."><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#."><i class="fa fa-skype"></i></a></li>
+                            <li><a href="#."><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-md-4"><img class="margin-bottom-30" src="/assets/testnext/images/logo-footer.png"
+                                               alt="">
+                        <p>Aoluptas sit aspernatur aut odit aut fugit, sed elits quias consequuntur magni dolores eos
+                            qui ratione volust luptatem sequi nesciunt. .</p>
+                        <ul class="personal-info">
+                            <li><i class="fa fa-map-marker"></i> 10th Floor,Washington Square Park,
+                                NY, United States.
+                            </li>
+                            <li><i class="fa fa-envelope"></i> Support@domain.com</li>
+                            <li><i class="fa fa-phone"></i> (004)+ 124 45 78 678</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service provided -->
+                    <div class="col-md-4">
+                        <h6>Service provided</h6>
+                        <ul class="links">
+                            <li><a href="#.">SEO Services</a></li>
+                            <li><a href="#.">Pay per click</a></li>
+                            <li><a href="#.">Social Media</a></li>
+                            <li><a href="#.">Web Analytics</a></li>
+                            <li><a href="#.">Web Developement</a></li>
+                            <li><a href="#.">Content Management</a></li>
+                            <li><a href="#.">Blog Management</a></li>
+                            <li><a href="#.">Virtual Marketing</a></li>
+                            <li><a href="#.">Email Marketing</a></li>
+                            <li><a href="#.">Keyword Analytics</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quote -->
+                    <div class="col-md-4">
+                        <h6>Get Free Quote</h6>
+                        <div class="quote">
+                            <form>
+                                <input class="form-control" type="text" placeholder="Name">
+                                <input class="form-control" type="text" placeholder="Phone No">
+                                <textarea class="form-control" placeholder="Messages"></textarea>
+                                <button type="submit" class="btn btn-orange">SEND NOW</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rights -->
+        <div class="rights">
+            <div class="container">
+                <p>Copyright © 2016 Infinity SEO Solution. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- End Page Wrapper -->
+<script src="/assets/testnext/js/vendors/jquery/jquery.min.js"></script>
+<script src="/assets/testnext/js/vendors/wow.min.js"></script>
+<script src="/assets/testnext/js/vendors/bootstrap.min.js"></script>
+<script src="/assets/testnext/js/vendors/own-menu.js"></script>
+<script src="/assets/testnext/js/vendors/flexslider/jquery.flexslider-min.js"></script>
+<script src="/assets/testnext/js/vendors/jquery.countTo.js"></script>
+<script src="/assets/testnext/js/vendors/jquery.isotope.min.js"></script>
+<script src="/assets/testnext/js/vendors/jquery.bxslider.min.js"></script>
+<script src="/assets/testnext/js/vendors/owl.carousel.min.js"></script>
+<script src="/assets/testnext/js/vendors/jquery.sticky.js"></script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+
+
+<script type="text/javascript" src="/assets/testnext/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/assets/testnext/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/assets/testnext/js/main.js"></script>
+<!-- JavaScripts -->
+
+<script>
+
+    $("[id^=buy_]").click(function (e) {
+        e.preventDefault();
+        //var _name = $(this).attr('id').split("_")[0];
+
+        var _name = $(this).attr('id').split("_")[1];
+        var Itemname = $(this).parent().find(".ItemName").val();
+        var price = $(this).parent().find(".cost").val();
+        var description = $(this).parent().find(".des").val();
+        var quantity = $(this).parent().find(".qyt").val();
+        var quent = $(this).parent().find(".quent").val();
+
+        //$('#forme')[0].reset();
+
+        //alert(quent);
+        var post = {
+            item_name: Itemname,
+            price: price,
+            descriptin: description,
+            quantity: quantity,
+            quent:quent,
+            ItemName : _name
+
+        };
+        $.ajax({
+            url: "/api/method/testnext.www.testing.insert_OrderSales",
+            type: "POST",
+            data: post,
+            //dataType: "jsonp",
+        });
+
+
+    });
+</script>
+
+
+
+</body>
+</html>

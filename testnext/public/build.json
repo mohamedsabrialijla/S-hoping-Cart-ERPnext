@@ -1,0 +1,11 @@
+{
+	"css/frappe-web.css": [
+		"public/css/bootstrap/bootstrap.min.css",
+	],
+	"js/frappe-web.js": [
+		"public/js/vendors/jquery/jquery.min.js",
+		
+	]
+
+
+}

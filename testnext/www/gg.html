@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form _ ERPnext</title>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/testnext/css/styl.css">
+ <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/test2/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/test2/images/favicon.ico" type="image/x-icon">
+
+        <script src="/assets/testnext/js/vendors/jquery/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<header class="ccheader">
+    <h1>Contact Form</h1>
+</header>
+<div class="wrapper">
+    <form method="post" action="" class="ccform">
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+        <input class="ccformfield" type="text" id="name" placeholder="Full Name" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+        <input class="ccformfield" type="text" id="email" placeholder="Email" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+        <input class="ccformfield" type="text" id="phone" placeholder="Phone">
+    </div>
+     <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+        <input class="ccformfield" type="text" id="subject" placeholder="Subject" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
+        <textarea class="ccformfield" name="comments" id="mssage" rows="8" placeholder="Message" required></textarea>
+    </div>
+    <div class="ccfield-prepend">
+        <input class="ccbtn" type="submit" id="submit" value="Submit">
+    </div>
+    </form>
+</div>
+
+
+<script>
+
+$("#submit").click(function(e){
+    e.preventDefault();
+    //$('#forme')[0].reset();
+
+var post = {
+            email: $('#email').val(),
+            subject: $('#subject').val(),
+            name: $('#name').val(),
+            mssage: $('#mssage').val(),
+            phone: $('#phone').val()
+        };
+        $.ajax({
+            url: "/api/method/testnext.adding.insert_issu",
+            type: "POST",
+            data: post,
+            //dataType: "jsonp",
+        });
+   });
+</script>
+<script src="/assets/testnext/js/vendors/jquery/jquery.min.js"></script>
+</body>
+</html>

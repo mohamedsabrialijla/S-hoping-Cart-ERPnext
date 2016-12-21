@@ -1,0 +1,46 @@
+ {% block content %}
+    <!--======= HOME MAIN SLIDER =========-->
+
+    <!-- Content -->
+    <div id="content">
+
+        <!-- Case Studies -->
+        <section class="case-studies padding-top-100 padding-bottom-100">
+            < class="container">
+
+                <!-- Tittle -->
+                <div class="heading-block text-center margin-bottom-80">
+                    <h2>Case Studies </h2>
+                    <span class="intro-style">Do you want to improve the online visibility of your brand </span></div>
+
+                <!-- Cases -->
+                <div class="case">
+                    <ul class="row">
+
+                        <!-- Case 1 -->
+                        {% for i in items %}
+                        <li class="col-md-4">
+                            <article><a href="#"> <img class="img-responsive" src="/assets/testnext/images/{{i.thumbnail}}"
+                                                       alt="" > </a>
+                                <div class="case-detail">
+                                    <h5>Tremely Design</h5>
+                                    <p>Paid listings on Google AdWords and
+                                        Microsoft AdCenter customers</p>
+                                    <a href="#." class="btn btn-orange">PURCHACE</a></div>
+
+                            </article>
+                        </li>
+                        div>
+
+                      {% endfor %}
+
+                    </ul>
+
+                    <!-- Button -->
+                </div>
+
+        </section>
+
+    </div>
+    <!-- End Content -->
+    {% endblock %}
